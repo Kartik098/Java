@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Form</h1>
+            <form action="RegisterServlet" method="POST">
+                <label for="user_name">Enter your name:</label>
+                <input type="text" name="user_name" placeholder="Name"><br>
+                <label for="pwd">Enter password:</label>
+                <input type="password" name="pwd" placeholder="Password">
+                <label for="email">Enter your email:</label>
+                <input type="email" name="email" placeholder="Enter email">
+                <label for="Gender">Select your gender:</label>
+                 <input type="radio" S name="Gender" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio"  name="Gender" value="Female">
+                <label for="Female">Female</label><br>              
+                 <label>Select you course:</label>
+                 <select name="user_course">
+                     <option value="Android">Android</option>
+                     <option value="Java">Java</option>
+                     <option value="Python">Python</option>
+                     <option value="C#">C#</option>
+                 </select><br>
+                 <input type="checkbox" value="checked" name="terms">
+                 <label for="terms"> Agree terms and conditions</label><br>
+                 <button>Register</button><span>    </span><button>Reset</button>
+            </form>
+        </div>
+    </body>
+</html>
